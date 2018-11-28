@@ -3,9 +3,9 @@ _Content Creation_
 
 ## Specifications
 
-- Custom elements
+- [Custom elements](custom-elements.md)
 - Course organizations
-  - Languages
-  - Lessons
-  - Sections
-  - Slides
+    - Languages
+    - Lessons
+    - Sections
+    - Slides
