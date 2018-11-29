@@ -53,4 +53,22 @@ Anchors are simple links elements
 
 ## Images
 
+Images show images
+- They can appear anywhere
+    - i.e. standalone or inside other elements
+- Images can be self-closed
+
+### Attributes
+
+- Images support single attribute
+    - `src` sets the location of the image
+
+### Examples
+
+
+```
+[image src="http://link-to-image" /]
+[image src="http://link-to-image"][/image]
+```
+
 ## Code tasks
