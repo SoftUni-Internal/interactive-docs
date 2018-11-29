@@ -1,5 +1,4 @@
-# Interactive
-_Content Creation_
+# Interactive Content Creation
 
 ## Specifications
 
