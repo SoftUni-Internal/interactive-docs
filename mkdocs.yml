@@ -1,1 +1,10 @@
 site_name: Interactive Content Creation Documentation
+theme:
+    name: 'material'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+        - csharp
+        - javascript
+        - xml
