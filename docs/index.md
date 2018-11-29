@@ -2,8 +2,8 @@
 
 ## Specifications
 
-- [Custom elements](custom-elements.md)
-- Course organizations
+- [Custom elements](custom-elements)
+- [Course organization](course-organization/index.md)
     - Languages
     - Lessons
     - Sections

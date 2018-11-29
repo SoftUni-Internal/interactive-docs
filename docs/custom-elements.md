@@ -1,5 +1,3 @@
-# Interactive Content Creation
-
 ## Slides ([slide])
 
 For organizational purpose of slides, read [Slides](organizational_elements/slides)
