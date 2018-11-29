@@ -1,7 +1,6 @@
 site_name: Interactive Content Creation Documentation
 
 theme:
-    name: readthedocs
     highlightjs: true
     hljs_languages:
         - yaml
