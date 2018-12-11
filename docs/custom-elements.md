@@ -4,7 +4,7 @@ For organizational purpose of slides, read [Slides](organizational_elements/slid
 
 - A slide is a outer element
     - It cannot be nested and cannot be present into another elements
-- Each slide must start with a title (`# Title`)
+- Each slide must start with a Title (hashtag followed by space followed by the title itself for example `# Example Title`)
     - This is the title of the slide and appears in the lesson navigation
 - Elements into a slide must not be intented
     - i.e. No unnecessary whitespace left of its nested elements
