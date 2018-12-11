@@ -2,6 +2,6 @@
 
 ## Specifications
 
-- [Custom markdown elements](custom-elements)
-- [Markdown elements](markdown-elements.md)
+- [Custom markdown elements](custom-markdown-elements)
+- [Markdown elements](markdown-elements)
 - [Course organization](course-organization/index.md)
