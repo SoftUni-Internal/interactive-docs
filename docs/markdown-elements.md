@@ -8,7 +8,7 @@ You can add an optional language identifier to enable syntax highlighting in you
 Currently supported languages for syntax highlighting are:  
 
 C# ("csharp", "cs", "c#")  
-Javascript ("js", "javascript")  
+Javascript ("js", "JS", "javascript", "javaScript")  
 JSX ("jsx")  
 CSS ("css")  
 
