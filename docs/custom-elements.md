@@ -132,12 +132,12 @@ Code editor can contain predifined code
 
 ### Examples
 
-
 ```
 [code-editor language=csharp]
 [/code-editor]
 
 [code-editor language=csharp]
+\```
 using System;
 public class App
 {
@@ -146,10 +146,12 @@ public class App
         // Write your code here
     }
 }
+\```
 [/code-editor]
 
 
 [code-editor language=csharp]
+\```
 using System;
 public class App
 {
@@ -159,6 +161,7 @@ public class App
         var square = ; // calculate the square of `a`
     }
 }
+\```
 [/code-editor]
 ```
 
