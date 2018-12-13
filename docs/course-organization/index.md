@@ -6,6 +6,7 @@ The only requirement is to follow a strict architecture:
 
 ## Course directory
 The root of the repository contains one assets folder and one or many languages folders
+
   - The name of the assets folder should be `assets`
   - Each language folder name should be 2-letter language name
   - The contents of each language folder will contain the course in the respectful language
