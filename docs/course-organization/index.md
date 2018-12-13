@@ -6,9 +6,9 @@ The only requirement is to follow a strict architecture:
 
 ## Course directory
 The root of the repository contains one or many folders
-- Each with 2-letter language name
-- The contents of each folder will contain the course is the respectful language
-- Each of the folders represents an instance of this course in the respectful language
+    - Each with 2-letter language name
+    - The contents of each folder will contain the course is the respectful language
+    - Each of the folders represents an instance of this course in the respectful language
 
 <img src="../imgs/course-tree.png">
 
