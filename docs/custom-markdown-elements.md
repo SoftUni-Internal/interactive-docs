@@ -82,6 +82,16 @@ Code tasks has the following attributes:
     - Possible values are `csharp-dot-net-core-code` and `csharp-code`
 -   `requiresInput` is set when reading from the standart input is required
     -   optional
+- `checkerType` sets the checker which will be used by the judge
+    - available values are:
+       - `exact-match`
+      - `case-insensitive`
+      - `precision`
+      - `sort`
+      - `trim`
+      - `trim-end`
+
+If the `checkerType` attribute is not specified the `exact-match` is set as a default value.
         
 ### Nested elements
 
@@ -96,6 +106,8 @@ Code task can have only the following nested elements:
 -   [\[code-io\]](#code-inputoutput-code-io)
     - Add this element when the user needs IO (standart input/output)
     - Optional
+- [\[tests\]](#tests-tests)
+    - This is the container for all tests
 
 ### Examples
 
@@ -115,6 +127,30 @@ Code task can have only the following nested elements:
 [code-editor ...] [/code-editor]
 [task-description] [/task-description]
 [code-io /]
+[/code-task]
+[code-task title="Calculating the area of a square" executionStrategy="csharp-dot-net-core-code" requiresInput]
+[code-editor ...] [/code-editor]
+[task-description] [/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+150
+[/output]
+[/test]
+[test]
+[input]
+100
+[/input]
+[output]
+[/output]
+[/test]
+[/tests]
 [/code-task]
 ```
 
@@ -203,4 +239,83 @@ Code input/output has no attributes
 ```
 [code-io /]
 [code-io][/code-io]
+```
+
+## Tests ([tests])
+
+Tests can be used only in a `[code-task]` element. The job of the `[tests]` element is to hold all tests for the `[code-task]`.
+
+### Attributes
+Tests has no attributes
+
+### Nested elements
+
+The `[tests]` element has only `[test]` as a nested element, which contains information for a single judge test. The `[test]` element has `[input]` and `[output]` as nested elements. The `[input]` and `[output]` elements specify the input and the output values for the test.
+
+### Examples
+```
+[tests]
+[test]
+[input]
+1
+50
+100
+[/input]
+[output]
+151
+[/output]
+[/test]
+[test]
+[input]
+Random number 5
+[/input]
+[output]
+The random number is 5
+[/output]
+[/test]
+[/tests]
+```
+
+## List ([list])
+
+The list allow us to nest multiple components in its list items. The list can have `[list-item]` elements as nested elements.
+
+### Attributes
+- `type` sets the type of the list
+  - available values
+    - `unordered`
+    - `ordered`
+
+If the `type` attribute is not specified the list automatically becomes an unordered one.
+
+### Examples
+```
+[list]
+[list-item]
+### Example title
+[list type=ordered]
+[list-item]
+Text in a nested list
+[/list-item]
+[list-item]
+Another text in a nested list
+[/list-item]
+[list-item]
+Argument 3
+[/list-item]
+[/list]
+[/list-item]
+[list-item]
+Example text
+[/list-item]
+[/list]
+
+[list type=ordered]
+[list-item]
+Example 2
+[/list-item]
+[list-item]
+Example 2
+[/list-item]
+[/list]
 ```
